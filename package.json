@@ -11,6 +11,7 @@
     "node": "^14.18 || >= 16.0.0"
   },
   "devDependencies": {
+    "@pinegrow/vite-plugin": "3.0.0-beta.44",
     "iles": "^0.8.6",
     "typescript": "^4.5",
     "vue-tsc": "^0.38"

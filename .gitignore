@@ -27,3 +27,6 @@ dist-ssr
 *.sw?
 
 .iles-ssg-temp/
+_pgbackup
+_pginfo
+pinegrow.json
