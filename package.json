@@ -11,6 +11,7 @@
     "node": "^14.18 || >= 16.0.0"
   },
   "devDependencies": {
+    "@pinegrow/tailwindcss-plugin": "3.0.0-beta.34",
     "@pinegrow/vite-plugin": "3.0.0-beta.44",
     "autoprefixer": "^10.4.13",
     "iles": "^0.8.6",

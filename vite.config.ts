@@ -6,6 +6,10 @@ import { liveDesigner } from '@pinegrow/vite-plugin'
 export default defineConfig({
   plugins: [
     liveDesigner({
+      tailwindcss: {
+        configPath: 'tailwind.config.js',
+        cssPath: '@/assets/css/tailwind.css'
+      },
       //... 
     }),
     //...
