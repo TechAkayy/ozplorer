@@ -5,7 +5,7 @@ defineProps<{
 </script>
 <template>
     <div class="greetings">
-        <h1 class="green">Iles with Vue Designer!</h1>
+        <h1 class="text-purple-600">Iles with Vue Designer!</h1>
         <h3>
       You’ve successfully created a project with <a target="_blank" href="https://iles-docs.netlify.app/">îles</a> + <a target="_blank" href="https://vitejs.dev/">Vite</a> + <FrameworkLink client:none/>. What's
       next? </h3>
