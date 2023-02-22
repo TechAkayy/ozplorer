@@ -10,6 +10,7 @@ export default defineConfig({
         configPath: 'tailwind.config.js',
         cssPath: '@/assets/css/tailwind.css'
       },
+      devtoolsKey: 'devtools'
       //... 
     }),
     //...
