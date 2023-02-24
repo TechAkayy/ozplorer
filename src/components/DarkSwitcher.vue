@@ -1,8 +1,8 @@
 <script setup lang="ts">
-	import { useDark } from '@vueuse/core'
+	import { useDark, useToggle } from '@vueuse/core'
 
 	const isDark = useDark()
-	const toggleDark = () => (isDark.value = !isDark.value)
+	const toggleDark = useToggle(isDark)
 
 	const iconName = $computed(() =>
 		isDark.value
@@ -14,17 +14,11 @@
 		isDark.value ? 'left-[1px]' : 'left-[20px]'
 	)
 </script>
-
 <template>
-	<BaseSwitch @toggle="toggleDark">
-		<template #bg-icon>
-			<BaseIcon
-				class="absolute bg-gray-200 inline-block z-10"
-				:class="absolutePositionClass"
-				:name="iconName"
-			/>
-		</template>
-	</BaseSwitch>
+    <BaseSwitch @toggle="toggleDark" :default-checked="isDark">
+        <template #bg-icon>
+            <BaseIcon class="absolute bg-gray-200 inline-block z-10" :class="absolutePositionClass" :name="iconName"/>
+        </template>
+    </BaseSwitch>
 </template>
-
 <style scoped></style>
