@@ -6,6 +6,7 @@ if (process.env.NODE_ENV /* nuxtApp.isDev */ === 'development') {
 
 import { defineApp } from 'iles'
 
+import 'uno.css'
 import '~/assets/base.css';
 import '~/assets/css/tailwind.css'
 
