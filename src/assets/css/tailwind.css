@@ -1,6 +1,6 @@
 /* Pinegrow generated Design Panel Init Begin */
 
-/* Pinegrow generated Design Panel Init End */
+    /* Pinegrow generated Design Panel Init End */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,9 +30,16 @@
 }
 
 /* Pinegrow generated Design Panel Extra Rules Begin */
-body,
-html {
-	min-height: 100vh;
+body, html {
+    min-height: 100vh;
 }
 
-/* Pinegrow generated Design Panel Extra Rules End */
+    /* Pinegrow generated Design Panel Extra Rules End */
+
+html.dark {
+	color-scheme: dark;
+}
+
+body {
+	@apply bg-slate-50 text-slate-800 dark:bg-slate-800 dark:text-slate-50;
+}

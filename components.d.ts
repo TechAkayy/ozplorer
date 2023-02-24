@@ -9,7 +9,9 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BaseIcon: typeof import('./src/components/BaseIcon.vue')['default']
     BaseLink: typeof import('./src/components/BaseLink.vue')['default']
+    BaseSwitch: typeof import('./src/components/BaseSwitch.vue')['default']
     CommunityIcon: typeof import('./src/components/icons/CommunityIcon.vue')['default']
+    DarkSwitcher: typeof import('./src/components/DarkSwitcher.vue')['default']
     DocumentationIcon: typeof import('./src/components/icons/DocumentationIcon.vue')['default']
     EcosystemIcon: typeof import('./src/components/icons/EcosystemIcon.vue')['default']
     FrameworkLink: typeof import('./src/components/FrameworkLink.vue')['default']
