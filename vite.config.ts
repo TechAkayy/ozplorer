@@ -8,20 +8,20 @@ import presetIcons from '@unocss/preset-icons'
 export default defineConfig({
   plugins: [
     liveDesigner({
+      devtoolsKey: 'devtools',
       tailwindcss: {
         configPath: 'tailwind.config.js',
-        cssPath: '@/assets/css/tailwind.css'
+        cssPath: '@/assets/css/tailwind.css',
+        restartOnConfigUpdate: true,
+        restartOnThemeUpdate: false,
       },
-      devtoolsKey: 'devtools'
-      //... 
     }),
-    //...
     Unocss({
       presets: [
         presetIcons({
           prefix: '', // overrides default prefix 'i'
-        })
-      ]
+        }),
+      ],
     }),
   ],
   //...
